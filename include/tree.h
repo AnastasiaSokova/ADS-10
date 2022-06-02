@@ -54,7 +54,7 @@ void Tree::create(Node* root, std::vector<char> x) {
         if (root->value != '#') {
             auto i = x.begin();
             while (i != x.end()) {
-                if (root->value = *i) {
+                if (root->value == *i) {
                     x.erase(i);
                     break;
                 }
