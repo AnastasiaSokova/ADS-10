@@ -43,8 +43,7 @@ void Tree::perest(Node* root, std::string line) {
             perest(root->list[i], line);
             i++;
         }
-    } 
-    else {
+    } else {
         line = line + root->value;
         p.push_back(line);
     }
