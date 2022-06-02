@@ -1,9 +1,11 @@
 // Copyright 2022 NNTU-CS
 #ifndef INCLUDE_TREE_H_
 #define INCLUDE_TREE_H_
+#include <vector>
+#include <string>
 
 class Tree {
-private:
+ private:
     struct Node {
         char value;
         std::vector<Node*> list;
@@ -13,7 +15,7 @@ private:
     void perest(Node* root, std::string line);
     std::vector<std::string> p;
 
-public:
+ public:
     std::string take(int x) const;
     explicit Tree(std::vector<char> x) {
         root = new Node;
